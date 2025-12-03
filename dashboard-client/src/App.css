@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+.status-open {
+  color: green;
+}
+
+.status-connecting {
+  color: darkgoldenrod;
+}
+
+.status-closing {
+  color: orangered;
+}
+.status-closed {
+  color: red;
+}
+
+.wrapper_interface {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 20rem;
+}
