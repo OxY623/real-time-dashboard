@@ -27,3 +27,13 @@ FastAPI, WebSockets, Uvicorn
 graph TD
 A[Client: React Dashboard] <-->|WebSocket| B[Python Server]
 B <--> C[(Data Source: e.g., Sensors/DB)]
+
+### Запустить сервер
+
+`uvicorn main:app --reload --host 0.0.0.0 --port 8000`
+
+### Запустить UI
+
+`cd .\dashboard-client\
+npm install    
+npm start`
