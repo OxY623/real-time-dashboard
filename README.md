@@ -1,6 +1,6 @@
 # Real‑Time Dashboard
 
-![Dashboard UI](https://TransFiles.ru/qtke8)
+![Dashboard UI]('./assets/Screenshot_9.jpg')
 
 
 ## 🔧 Подготовка окружения
