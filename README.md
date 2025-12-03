@@ -1,39 +1,73 @@
-# Real time dashboard
+# Real‑Time Dashboard
 
-## Activate virtual env
+## 🔧 Подготовка окружения
 
-window
+### Активация виртуального окружения
 
-`venv\Scripts\Activate.ps1`
+- **Windows**
+  ```powershell
+  venv\Scripts\Activate.ps1
+  ```
+- **Linux / macOS**
+  ```bash
+  source venv/bin/activate
+  ```
 
-linux `source venv/bin/activate`
+### Деактивация
 
-exit `deactivate`
+```bash
+deactivate
+```
 
-Fixed dependencies
-`pip freeze > requirements.txt`
-for install `pip install -r requirements.txt`
+### Управление зависимостями
 
-## Frontend
+- Зафиксировать зависимости:
+  ```bash
+  pip freeze > requirements.txt
+  ```
+- Установить зависимости:
+  ```bash
+  pip install -r requirements.txt
+  ```
 
-React, Recharts, react-use-websocket
+---
 
-## Backend
+## 🖥️ Frontend
 
-FastAPI, WebSockets, Uvicorn
+- **React**
+- **Recharts**
+- **react-use-websocket**
 
-## Architecture Overview
+## ⚙️ Backend
 
+- **FastAPI**
+- **WebSockets**
+- **Uvicorn**
+
+---
+
+## 📐 Архитектура
+
+```mermaid
 graph TD
 A[Client: React Dashboard] <-->|WebSocket| B[Python Server]
-B <--> C[(Data Source: e.g., Sensors/DB)]
+B <--> C[(Data Source: Sensors / Database)]
+```
 
-### Запустить сервер
+---
 
-`uvicorn main:app --reload --host 0.0.0.0 --port 8000`
+## 🚀 Запуск проекта
 
-### Запустить UI
+### Сервер
 
-`cd .\dashboard-client\
-npm install    
-npm start`
+```bash
+uvicorn main:app --reload --host 0.0.0.0 --port 8000
+```
+
+### Клиент (UI)
+
+```bash
+cd dashboard-client
+npm install
+npm start
+```
