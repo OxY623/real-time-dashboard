@@ -1,6 +1,6 @@
 # Real‑Time Dashboard
 
-![Dashboard UI]('./dashboard-client/assets/Screenshot_9.jpg')
+![Dashboard UI](./dashboard-client/assets/Screenshot_9.jpg)
 
 ## 🔧 Подготовка окружения
 
